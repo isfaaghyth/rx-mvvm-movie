@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="259dp">
+
+  <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/imgPoster"
+      android:scaleType="centerCrop"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@mipmap/ic_launcher"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/bg_gradient"/>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtMovieTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Movie Name"
+      android:textColor="@android:color/white"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:layout_marginStart="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/txtYear"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txtYear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="2012"
+      android:textColor="@android:color/white"
+      android:layout_marginStart="20dp"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
